@@ -142,7 +142,7 @@ gulp.task(
 );
 
 gulp.task('tns.Livesync', () => {
-    return gulp.watch([`${SRC}**/*.tns.html`, `${SRC}/**/*.tns.scss`, `${SRC}/**/*.component.ts`])
+    return gulp.watch([`${SRC}app/**/*.tns.html`, `${SRC}app/**/*.tns.scss`, `${SRC}app/**/*.tns.ios.scss`, `${SRC}app/**/*.tns.android.scss`, `${SRC}*.scss`, `${SRC}*.ts`, `${SRC}app/**/*.ts`])
         .on('change', (file) => {
             var outputDest = file.replace(SRC, DEST);
             outputDest = outputDest.substring(0, outputDest.lastIndexOf('/'));
