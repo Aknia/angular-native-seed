@@ -1,4 +1,5 @@
 import { NgModule, Optional, SkipSelf, NO_ERRORS_SCHEMA } from '@angular/core';
+import { TranslateModule, TranslateLoader } from '@ngx-translate/core';
 // app
 import { HomeComponent } from './components/home/home.component';
 import { SHARED_MODULES } from './home.common';

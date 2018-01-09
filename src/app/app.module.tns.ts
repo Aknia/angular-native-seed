@@ -1,7 +1,6 @@
 import { NgModule, NO_ERRORS_SCHEMA, NgModuleFactoryLoader } from '@angular/core';
 import { Http } from '@angular/http';
 // nativescript
-import { NSModuleFactoryLoader } from 'nativescript-angular/router';
 import { NativeScriptHttpModule } from 'nativescript-angular/http';
 import { NativeScriptModule } from 'nativescript-angular/nativescript.module';
 // vendor dependencies
@@ -38,8 +37,6 @@ export function createTranslateLoader(http: Http) {
         AppComponent
     ],
     providers: [
-        // Allows your {N} application to use lazy-loading
-        { provide: NgModuleFactoryLoader, useClass: NSModuleFactoryLoader }
     ],
     schemas: [
         NO_ERRORS_SCHEMA
