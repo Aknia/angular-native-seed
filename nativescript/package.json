@@ -5,33 +5,33 @@
   "nativescript": {
     "id": "com.domain.project",
     "tns-ios": {
-      "version": "3.4.0"
+      "version": "3.4.1"
     },
     "tns-android": {
-      "version": "3.4.0"
+      "version": "3.4.1"
     }
   },
   "dependencies": {
-    "@angular/animations": "~5.2.4",
-    "@angular/common": "~5.2.4",
-    "@angular/compiler": "~5.2.4",
-    "@angular/core": "~5.2.4",
-    "@angular/forms": "~5.2.4",
-    "@angular/http": "~5.2.4",
-    "@angular/platform-browser": "~5.2.4",
-    "@angular/platform-browser-dynamic": "~5.2.4",
-    "@angular/router": "~5.2.4",
+    "@angular/animations": "~5.2.8",
+    "@angular/common": "~5.2.8",
+    "@angular/compiler": "~5.2.8",
+    "@angular/core": "~5.2.8",
+    "@angular/forms": "~5.2.8",
+    "@angular/http": "~5.2.8",
+    "@angular/platform-browser": "~5.2.8",
+    "@angular/platform-browser-dynamic": "~5.2.8",
+    "@angular/router": "~5.2.8",
     "@ngx-translate/core": "9.1.1",
     "@ngx-translate/http-loader": "2.0.1",
     "nativescript-angular": "5.2.0",
     "nativescript-theme-core": "~1.0.4",
     "reflect-metadata": "~0.1.10",
     "rxjs": "^5.5.0",
-    "tns-core-modules": "3.4.0",
+    "tns-core-modules": "3.4.1",
     "zone.js": "^0.8.4"
   },
   "devDependencies": {
-    "@angular/compiler-cli": "~5.2.4",
+    "@angular/compiler-cli": "~5.2.8",
     "@ngtools/webpack": "~1.9.3",
     "@types/jasmine": "^2.8.3",
     "babel-traverse": "6.26.0",
