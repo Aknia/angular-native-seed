@@ -3,6 +3,10 @@ import { Component } from '@angular/core';
 import { TranslateService } from '@ngx-translate/core';
 // app
 import { MenuItem } from './menu/menu.common';
+import * as application from "tns-core-modules/application";
+import * as platform from "tns-core-modules/platform";
+import { isAndroid } from "platform";
+import { RouterExtensions } from "nativescript-angular/router/router-extensions";
 
 @Component({
     moduleId: module.id,
@@ -22,8 +26,18 @@ export class AppComponent {
         }
     ];
 
-    constructor(translate: TranslateService) {
+    constructor(translate: TranslateService, private router: RouterExtensions) {
         translate.setDefaultLang('en');
         translate.use('en');
+
+
+        if (!isAndroid) {
+            return;
+        }
+
+        application.android.on(application.AndroidApplication.activityBackPressedEvent, (data: application.AndroidActivityBackPressedEventData) => {
+            this.router.back();
+            data.cancel = true;
+        });
     }
 }

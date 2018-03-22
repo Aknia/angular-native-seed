@@ -4,11 +4,7 @@ import { HomeComponent } from './components/home/home.component';
 
 export const HomeRoutes: Routes = [
     {
-        path: 'home',
+        path: '',
         component: HomeComponent
-    },
-    {
-        path: 'about',
-        loadChildren: 'app/+about/about.module#AboutModule'
     }
 ];
